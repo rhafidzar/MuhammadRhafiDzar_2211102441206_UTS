@@ -27,5 +27,7 @@ public class Food extends Actor
         count++;
         if(count > 400)
         getWorld().removeObject(this);
+        else if (isTouching(Snake.class))
+        getWorld().removeObject(this);
     }
 }
